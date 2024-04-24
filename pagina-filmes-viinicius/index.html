@@ -5,31 +5,106 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Filmes</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header>
-        <section class="fundoLogo">
-            <img id="logo" src="./assets/_ce6c76a8-0228-455e-a498-852c801b136f 1.png" alt="logo-cineproz">
-        </section>
-
-
-        <section class="barraNav">
-            <nav>
-                <ul>
-                  <li><a href="">INÍCIO</a></li>
-                  <li><a href="">FILMES</a></li>
-                  <li><a href="">SOBRE</a></li>
-                  <li><a href="">CONTATO</a></li>
-                </ul>
-            </nav>
-
-            <div>
-
-            </div>
-        </section>
+        <div class="logo">
+            <img src="./assets/_ce6c76a8-0228-455e-a498-852c801b136f 1.png" alt="">
+        </div>
+        
+        <nav class="menu-site">
+            <ul>
+                <li>
+                    <a href="#">Home</a>                    
+                </li>
+                <li>
+                    <a href="#">Filmes</a>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu-opcoes">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Categoria</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Estreia</a>
+                        <a href="#">Clássicos</a>
+                        <a href="#">Pré-Estreia</a>
+                    </div>     
+                        
+                    
+                </li>
+                <li class="dropdown">
+                    <a href="#">Genero</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Terror</a>
+                        <a href="#">Romance</a>
+                        <a href="#">Comedia</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
 
+    <main>
+        
+        <div class="banner"></div>
+      <section>
+        <figure>
+          <img
+            src="./assets/encanto.png"
+            alt="banner-encanto"
+            class="cartaz"
+          />
+
+          <img src="./assets/raya.png" alt="banner-raya" class="cartaz" />
+
+          <img
+            src="./assets/buzz.png"
+            alt="banner-lightyear"
+            class="cartaz"
+          />
+        </figure>
+        <figure>
+          <img src="./assets/toy.png" alt="banner-toystory" class="cartaz" />
+
+          <img
+            src="./assets/irmaourso.png"
+            alt="banner-irmao-urso"
+            class="cartaz"
+          />
+
+          <img src="./assets/luca.png" alt="banner-luca" class="cartaz" />
+        </figure>
+      </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="cidademain">
+            <div class="maincidade">
+            <div class="cidade"></div>
+            <div class="cidade2"></div>
+            </div>
+                          
+            <div class="cidadeinfo">
+            <div class="cidadeinfo2">
+            <p>© 2024 todos os direitos reservados.</p>
+            
+            </div>
+                          
+            <div class="cidadeinfo2 cidadeinforight">
+            <p>Rede Social <a href="#" target="_blank">linkedin</a></p>
+            </div>
+            </div>
+              
+            </div>
+    </footer>
 </body>
 </html>
