@@ -1,335 +1,167 @@
-:root { 
-
-    --color-dark: #0B090A; 
-
-    --color-darker: #161A1D; 
-
-    --color-red-dark: #660708; 
-
-    --color-red: #A4161A; 
-
-    --color-red-light: #BA181B; 
-
-    --color-red-lighter: #E5383B; 
-
-    --color-gray: #B1A7A6; 
-
-    --color-light-gray: #D3D3D3; 
-
-    --color-light: #F5F3F4; 
-
-    --color-white: #FFFFFF; 
-
-} 
-
- 
-
-body { 
-
-    background-color: var(--color-light); 
-
-    color: var(--color-dark); 
-
-    font-family: Arial, sans-serif; 
-
-    margin: 0; 
-
-    padding: 0; 
-
-    display: flex; 
-
-    flex-direction: column; 
-
-    min-height: 100vh; 
-
-} 
-
- 
-
-.cabecalho { 
-
-    background-color: var(--color-darker); 
-
-    color: var(--color-white); 
-
-    display: flex; 
-
-    flex-direction: column; 
-
-    align-items: center; 
-
-    padding: 20px; 
-
-} 
-
- 
-
-.logo { 
-
-    max-height: 50px; 
-
-    margin-bottom: 10px; 
-
-} 
-
- 
-
-.menu-site { 
-
-    width: 100%; 
-
-    display: flex; 
-
-    justify-content: center; 
-
-} 
-
- 
-
-.menu-site ul { 
-
-    list-style: none; 
-
-    display: flex; 
-
-    justify-content: center; 
-
-    margin: 0; 
-
-    padding: 0; 
-
-} 
-
- 
-
-.menu-site li { 
-
-    margin: 0 15px; 
-
-} 
-
- 
-
-.menu-site a { 
-
-    text-decoration: none; 
-
-    color: var(--color-light); 
-
-} 
-
- 
-
-.menu-site a:hover { 
-
-    color: var(--color-red-lighter); 
-
-} 
-
- 
-
-.menu-opcoes { 
-
-    margin-top: 20px; 
-
-    width: 100%; 
-
-} 
-
- 
-
-.menu-lista { 
-
-    list-style: none; 
-
-    display: flex; 
-
-    justify-content: center; 
-
-    margin: 0; 
-
-    padding: 0; 
-
-} 
-
- 
-
-.menu-item { 
-
-    margin-left: 20px; 
-
-} 
-
- 
-
-.menu-item a { 
-
-    text-decoration: none; 
-
-    color: var(--color-light); 
-
-} 
-
- 
-
-.menu-item a:hover { 
-
-    color: var(--color-red-lighter); 
-
-} 
-
- 
-
-.dropdown-menu { 
-
-    display: none; 
-
-    position: absolute; 
-
-    background-color: var(--color-dark); 
-
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-
-    z-index: 1; 
-
-} 
-
- 
-
-.menu-item.dropdown:hover .dropdown-menu { 
-
-    display: block; 
-
-} 
-
- 
-
-.dropdown-menu a { 
-
-    color: var(--color-light); 
-
-    padding: 12px 16px; 
-
-    text-decoration: none; 
-
-    display: block; 
-
-} 
-
- 
-
-.dropdown-menu a:hover { 
-
-    background-color: var(--color-red); 
-
-} 
-
- 
-
-main { 
-
-    flex: 1; 
-
-    padding: 20px; 
-
-} 
-
- 
-
-.conteudo { 
-
-    max-width: 1200px; 
-
-    margin: auto; 
-
-    display: flex; 
-
-    flex-direction: column; 
-
-    align-items: center; 
-
-} 
-
- 
-
-.titulo-principal { 
-
-    color: var(--color-red-dark); 
-
-    text-align: center; 
-
-    margin-bottom: 20px; 
-
-} 
-
- 
-
-.descricao, .chamada-acao, p { 
-
-    margin-bottom: 15px; 
-
-    line-height: 1.6; 
-
-    text-align: center; 
-
-} 
-
- 
-
-.galeria-filmes { 
-
-    margin-top: 40px; 
-
-    display: flex; 
-
-    flex-wrap: wrap; 
-
-    gap: 10px; 
-
-    justify-content: center; 
-
-    align-items: center; 
-
-} 
-
- 
-
-.filmes-grid { 
-
-    display: flex; 
-
-    flex-wrap: wrap; 
-
-    gap: 10px; 
-
-    justify-content: center; 
-
-} 
-
- 
-
-.filme-img { 
-
-    width: 150px; 
-
-    height: 220px; 
-
-    object-fit: cover; 
-
-    margin-bottom: 15px; 
-
-} 
-
- 
-
-.rodape { 
-
-    background-color: var(--color-darker); 
-
-    color: var(--color-white); 
-
-    text-align: center; 
-
-    padding: 10px; 
-
-} 
+:root {
+    --color-dark: #0B090A;
+    --color-darker: #161A1D;
+    --color-red-dark: #660708;
+    --color-red: #A4161A;
+    --color-red-light: #BA181B;
+    --color-red-lighter: #E5383B;
+    --color-gray: #B1A7A6;
+    --color-light-gray: #D3D3D3;
+    --color-light: #F5F3F4;
+    --color-white: #FFFFFF;
+}
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between; /* Alteração aqui */
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    max-height: 50px;
+    margin-bottom: 10px;
+}
+
+.menu-site {
+    width: 100%;
+}
+
+.menu-site ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-site li {
+    margin: 0 15px;
+}
+
+.menu-site a {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.menu-site a:hover {
+    color: var(--color-red-lighter);
+}
+
+.menu-opcoes {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.menu-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin-left: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.menu-item a:hover {
+    color: var(--color-red-lighter);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-dark);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: var(--color-light);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--color-red);
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--color-light-gray);
+}
+
+.conteudo {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-principal {
+    color: var(--color-red-dark);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descricao, .chamada-acao, p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.galeria-filmes {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.filme-img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.rodape {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px;
+}
