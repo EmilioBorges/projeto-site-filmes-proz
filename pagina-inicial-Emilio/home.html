@@ -3,80 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="/pagina-inicial-Emilio/style.css">
+    <script src="/pagina-inicial-Emilio/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="/pagina-inicial-Emilio/img/logo.png" alt="Logo do site">
-        </div>
-        
-        <nav class="menu-site">
-            <ul>
-                <li>
-                    <a href="/pagina-inicial-Emilio/home.html">Home</a>                    
-                </li>
-                <li>
-                    <a href="/pagina-filmes-Vinicius/filmes.html">Filmes</a>
-                </li>
-                <li>
-                    <a href="/pagina-sobre-Ariane/sobre.html">Sobre</a>
-                </li>
-                <li>
-                    <a href="/pagina-contato/contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="menu-opcoes">
-            <ul>
-                <li class="dropdown">
-                    <a href="#">Categoria</a>
-                    <div class="dropdown-menu">
-                        <a href="#">Estreia</a>
-                        <a href="#">Clássicos</a>
-                        <a href="#">Pré-Estreia</a>
-                    </div>     
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <a href="/pagina-inicial-Emilio/home.html"><img src="/pagina-inicial-Emilio/img/logo-certa.jpg" 
+                alt="logo do site">
+                </a>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/pagina-inicial-Emilio/home.html">Home</a>                    
+                        </li>
+                        <li>
+                            <a href="/pagina-filmes-Vinicius/filmes.html">Filmes</a>
+                        </li>
+                        <li>
+                            <a href="/pagina-sobre-Ariane/sobre.html">Sobre</a>
+                        </li>
                         
-                    
-                </li>
-                <li class="dropdown">
-                    <a href="#">Genero</a>
-                    <div class="dropdown-menu">
-                        <a href="#">Terror</a>
-                        <a href="#">Romance</a>
-                        <a href="#">Comedia</a>
-                        <a href="#">Drama</a>
-                        <a href="#">Ficção Científica</a>
-                        <a href="#">Infetil</a>
-                        <a href="#">Geral</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>         
+                        <li class="dropdown">
+                            <a href="#">Categoria</a>
+                            <div class="dropdown-menu">
+                                <a href="#">Estreia</a>
+                                <a href="#">Clássicos</a>
+                                <a href="#">Pré-Estreia</a>
+                            </div>   
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Genero</a>
+                            <div class="dropdown-menu">
+                                <a href="#">Terror</a>
+                                <a href="#">Romance</a>
+                                <a href="#">Comedia</a>
+                                <a href="#">Drama</a>
+                                <a href="#">Ficção Científica</a>
+                                <a href="#">Infetil</a>
+                                <a href="#">Geral</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn-contato">
+                    <a href="/pagina-contato/contato.html"><button>Contato</button></a>
+                </div>
+            </div>
+           
+        </div>      
+        
     </header>
 
-    <div class="s-container">
-        <div class="s-cards-carousel" >
-            <a href="#" class="s-card" >
-                <img class="s-card__background" src="/pagina-inicial-Emilio/img/godzilla-kong.jpg" alt="Imagem filme Godzilla-Kong">
-                <h2 class="s-card__title">Godzilla-Kong</h2>
-            </a>
-        
-            <a href="#" class="s-card">
-                <img class="s-card__background" src="/pagina-inicial-Emilio/img/deadpool.png" alt="Imagem Filme DeadPool 3">
-                <h2 class="s-card__title">DeadPool</h2>
-            </a>
-        
-            <a href="#" class="s-card">
-                <img class="s-card__background" src="/pagina-inicial-Emilio/img/planeta-macaco.webp" alt="Imagem filme planeta dos macaco">
-                <h2 class="s-card__title">Planeta dos Macacos</h2>
-            </a>
+    <div class="carrossel">
+        <div class="list">
+            <div class="item">
+                <img src="/pagina-inicial-Emilio/img/deadPool-3.jpg" alt="">
+                <div class="content">
+                    <div class="title">Deadpool & Wolverine</div>
+                    <div class="des">Deadpool & Wolverine reúne o icônico mercenário tagarela Wade Wilson (Ryan Reynolds) e o poderoso mutante Wolverine (Hugh Jackman) em uma aventura explosiva, escrita e produzida pelos mesmos talentos por trás de Deadpool (2016) e Deadpool 2 (2018). Wade Wilson desfruta de um momento de aparente calma ao lado de Vanessa (Morena Baccarin) e seus amigos e, em contra partida, Wolverine se recupera de seus ferimentos. Um têm os seus caminhos cruzados com o outro, dando início a uma improvável aliança. Juntos, eles enfrentam um inimigo formidável em comum, desencadeando uma jornada repleta de ação, humor e reviravoltas surpreendentes. Deadpool & Wolverine promete ser uma aventura épica, cheia de referências aos quadrinhos e momentos de pura adrenalina, proporcionando aos fãs uma experiência única e inesquecível no universo dos super-heróis.
+    
+                    </div>
+                    <div class="buttons">
+                        <button>Veja mais</button>
+                        <button><strong>Inscreva-se</strong></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/pagina-inicial-Emilio/img/godz-cong-2.jpg" alt="">
+                <div class="content">
+                    <div class="title">Godzilla e Kong: O Novo Império</div>
+                    <div class="des">Em Godzilla e Kong: O Novo Império, é um novo capítulo no chamado MonsterVerse, onde depois de terem se encontrado como inimigos em Godzila vs Kong, o poderoso Kong e o temível Godzilla se unem contra uma colossal ameaça mortal escondida no mundo dos humanos, que além de ameaçar sua própria existência também ameaça nossa espécie. Mergulhando profundamente nos mistérios da Ilha da Caveira e nas origens da Terra Oca, o filme irá explorar a antiga batalha de Titãs que ajudou a forjar esses seres extraordinários e os ligou à humanidade para sempre. Dirigido novamente por Adam Wingard, a trama também trará de volta personagens conhecidos, além de introduzir um novo protagonista, interpretado por Dan Stevens.
+    
+                    </div>
+                    <div class="buttons">
+                        <button>Veja mais</button>
+                        <button><strong>Inscreva-se</strong></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/pagina-inicial-Emilio/img/planeta-dos-macacos.jpeg" alt="">
+                <div class="content">
+                    <div class="title">Planeta dos Macacos: O Reinado</div>
+                    <div class="des">Planeta dos Macacos: O Reinado dá continuidade à saga dos primatas inteligentes, situando-se em um futuro distante após os eventos de Guerra pelo Planeta dos Macacos de 2017. Com muitas sociedades de macacos surgindo desde a liderança de Caesar (Kevin Durand), a divisão entre eles é evidente: alguns desconhecem completamente os feitos do líder, enquanto outros distorcem seus ensinamentos para construir impérios poderosos. Neste novo mundo, um líder macaco busca escravizar outros grupos para adquirir tecnologia humana, desencadeando uma luta pelo poder e sobrevivência. Enquanto isso, um jovem macaco testemunha da captura de seu clã e inicia uma jornada em busca da liberdade. No entanto, é uma jovem humana que se torna a chave para os destinos entrelaçados dessas diferentes facções. Planeta dos Macacos: O Reinado fala em questões de poder, liberdade e coexistência, enquanto os primatas evoluídos e os humanos lutam para encontrar seu lugar em um mundo pós-apocalíptico onde os segredos do passado podem determinar o futuro de todos.
+    
+                    </div>
+                    <div class="buttons">
+                        <button>Veja mais</button>
+                        <button><strong>Inscreva-se</strong></button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="mini-card">
+            <div class="item">
+                <img src="/pagina-inicial-Emilio/img/deadPool-3.jpg" alt="">
+                <div class="content">
+                    <div class="title">
+                        Deadpool & Wolverine
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/pagina-inicial-Emilio/img/godz-cong-2.jpg" alt="">
+                <div class="content">
+                    <div class="title">
+                        Godzilla e Kong: O Novo Império
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/pagina-inicial-Emilio/img/planeta-dos-macacos.jpeg" alt="">
+                <div class="content">
+                    <div class="title">
+                        Planeta dos Macacos: O Reinado
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev" onclick="prevPag()"><</button>
+            <button id="next" onclick="nextPag()">></button>
+        </div>
+        <div class="time"></div>
     </div>
 
     <main>
-        <section></section>
+        
         <article class="texto-introdutorio">
             
             O mundo do cinema está sempre em movimento, com novos filmes sendo lançados a cada semana. Alguns dos lançamentos mais esperados deste ano incluem sequências de franquias populares, remakes de clássicos e novas obras de diretores aclamados.
@@ -100,16 +158,16 @@
                           
             <div class="cidadeinfo">
             <div class="cidadeinfo2">
-            <p>© 2024 todos os direitos reservados.</p>
-            
+            <p>© 2024 Todos os direitos reservados à Filmes Proz.</p>
             </div>
                           
             <div class="cidadeinfo2 cidadeinforight">
-            <p>Rede Social <a href="#" target="_blank">linkedin</a></p>
+            <p><a href="/pagina-inicial-Emilio/home.html" target="_blank">CineProz.com</a></p>
             </div>
             </div>
               
             </div>
     </footer>
+    
 </body>
 </html>

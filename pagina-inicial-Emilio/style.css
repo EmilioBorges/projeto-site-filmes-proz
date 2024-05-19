@@ -1,0 +1,563 @@
+@import url(/pagina-inicial-Emilio/reset.css);
+
+/* MENU */
+
+html {
+    height: 200vh;
+}
+
+body {
+    background-color: #0B090A;
+    background-image: linear-gradient(
+        #0B090A,
+        #660708
+    );
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {    
+    width: 1500px;
+    max-width: 80%;
+    margin: auto;    
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    transition: .7s;
+    margin-top: 15px;
+    
+}
+
+/* header:hover{
+    background-color: #0B090A;
+    max-width: 100%;
+    padding: 60px 4px;  
+    transition: .7s;
+} */
+
+header .container .flex a img{
+    width: 74px;
+    height: 74px;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 35px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    padding-top: 12px;    
+}
+
+header ul li:hover {
+    border-radius: 0px;
+    border: 2px solid #660708;
+    transition: .2s;
+    
+}
+
+header ul li a{
+    color: #FFFFFF;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    background-color: #0B090A;
+    padding: 5px;
+    border: 2px solid #660708;  
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 16px;
+    border: 1px solid #660708;
+}
+
+.dropdown-menu a:hover{
+    border: 1px solid #FFFFFF;
+    background-color: #660708;
+}
+
+.flex .dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 12px;
+    /* margin-left: -46px; */
+}
+
+/* FALAR COM O INDIO */
+.flex .dropdown:hover .dropdown-menu:nth-child(2){
+    display: block;
+    margin-left: -82.5px;
+    
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #660708;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 4px;
+}
+
+/* Carrossel */
+
+.carrossel {
+    height: 120vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.carrossel .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carrossel .list .item .img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.item img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1490px;
+    height: 1000px;
+    filter: drop-shadow(10px 2px 1px rgba(0, 0, 0, .3));
+}
+
+.carrossel .list .item .content{
+    position: absolute;
+    top: 6%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0B090A;
+}
+
+.carrossel .list .item .content .title{
+    font-weight: bold;
+    font-size: 3.5em;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    padding-bottom: 8px;
+}
+
+.carrossel .list .item .content .des {
+    text-shadow: 0.1em 0.1em 0.2em black;
+    background-color: #660708;
+    width: 1000px;
+    height: 125px;
+    text-align: center;
+    padding:18px;
+    border-radius: 9px;
+    opacity: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.carrossel .list .item .content .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.carrossel .list .item .content button {
+    border: none;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight:  500;
+    background-color: #0B090A;
+    color: #FFFFFF;
+}
+
+.carrossel .list .item .content button:nth-child(2) {
+    background-color: transparent;
+    color: #0B090A;
+    border: 2px solid #660708;
+}
+
+.carrossel .list .item .content button:nth-child(2):hover {
+    background-color: #660708;
+    color: #fff;
+    border: 2px solid #660708;
+}
+
+/* minicard */
+
+.mini-card {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.mini-card .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.mini-card .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.mini-card .item .content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.mini-card .item .content .title{
+    font-weight: bold;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #660708;
+}
+
+/* botao para troca de imagem */
+
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #660708;
+    border: none;
+    font-family: monospace;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 100;
+    border: 2px solid #0B090A;
+}
+
+.arrows button:hover{
+    background-color: #eee;
+    color: #555;
+}
+
+/* efeito de no titulo e descricao do filme */
+
+.carrossel .list .item:nth-child(1) {
+    z-index: 1;
+}
+
+.carrossel .list .item:nth-child(1) .title,
+.carrossel .list .item:nth-child(1) .des,
+.carrossel .list .item:nth-child(1) .buttons{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.8s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.carrossel .list .item:nth-child(1) .title {
+    animation-delay: 1.2s;
+}
+
+.carrossel .list .item:nth-child(1) .des {
+    animation-delay: 1.4s;
+}
+
+.carrossel .list .item:nth-child(1) .buttons {
+    animation-delay: 1.6s;
+}
+
+/* efeito de trocar a imagem no click */
+
+.carrossel.next .list .item:nth-child(1) img {
+    width: 150px;
+    min-height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage{
+    to {
+        width: 100%;
+        min-height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+.carrossel.next .mini-card .item:nth-last-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+@keyframes showThumbnail {
+    to{
+        width: 150px;
+    }
+}
+
+.carrossel.next .mini-card{
+    transform: translateX(150px);
+    animation: transformThumbnail .5s linear forwards;
+}
+
+@keyframes transformThumbnail{
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+/* efeito com click */
+
+.carrossel.prev .list .item:nth-child(2){
+    z-index: 2;    
+}
+
+.carrossel.prev .list .item:nth-child(2) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImagem 0.5s linear 1 forwards;
+}
+
+@keyframes outImage {
+    to {
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+
+.carrossel.prev .mini-card .item:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail 0.5s linear 1 forwards
+}
+
+.carrossel.prev .list .item:nth-child(2) .title,
+.carrossel.prev .list .item:nth-child(2) .des,
+.carrossel.prev .list .item:nth-child(2) .buttons{
+    animation: contentOut 1.5s linear forwards;
+}
+
+@keyframes contentOut {
+    to{
+        transform: translateY(150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.carrossel.next .arrows button,
+.carrossel.prev .arrows button{
+    pointer-events: none;
+}
+
+/* time */
+
+.time {
+    width: 0%;
+    height: 5px;
+    background-color: #f1683a;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.carrossel.next .time,
+.carrossel.prev .time{
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning {
+    to {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .carrossel .list .item .content{
+        padding-right: 0;
+    }
+    .carrossel .list .item .content .title {
+        font-size: 30px;
+    }
+}
+
+/* sobre o site */
+
+ main article {
+    
+    color: #FFFFFF;
+    width: 900px;
+    height: 350px; 
+    padding: 25px; 
+    font-size: 20px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    
+}
+
+main  .texto-introdutorio{
+    text-align: center;
+    margin-top: 6px;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+/* FOOTER */
+
+.rodape .cidademain {
+    position: absolute;
+    background: url(https://rawartsites.neocities.org/img/Footer/footer-bg.webp) no-repeat scroll center 0;
+    width: 100%;
+    height: 300px;  
+    overflow: hidden; 
+}
+
+.rodape .cidade{
+    background: url(https://rawartsites.neocities.org/img/Footer/volks.gif) no-repeat;
+    width: 252px;
+    height: 113px;
+    left: 0%;
+    bottom: 0;
+    background-size: 250px;
+    position: absolute;
+    animation: cidade 10s linear infinite;
+    z-index: 100;
+}
+
+@keyframes cidade {
+    0% {
+      left: 0%;
+      }
+  
+    100%{
+      left: 100%;
+    }
+  }
+
+.rodape .cidade2{
+    background: url(https://rawartsites.neocities.org/img/Footer/cyclist.gif) no-repeat;
+    width: 190px;
+    height: 109px;
+    left: 0%;
+    bottom: 0;
+    background-size: 78px;
+    animation: cidade2 15s linear infinite;
+    position: absolute;
+
+}
+
+@keyframes cidade2 {
+    0% {
+      left: 0%;
+      }
+  
+    100%{
+      left: 100%;
+    }
+  }
+
+  .cidadeinfo {
+    color: #FFFFFF;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 268px 0 0 0;
+    display: flex;
+  }
+
+  .cidadeinforight {
+    position: absolute;
+    text-align: right;
+    width: inherit;
+  }
+
+  .cidadeinforight p, .cidadeinforight a{
+    color: #FFFFFF;
+  }
+
+  @media (max-width: 768px) {
+	
+	.cidadeinforight {
+	  
+    position: relative;
+    text-align: right;
+    width: auto;
+    padding: 0 8px;
+	  
+  }
+	
+	.cidadeinfo {
+	  
+    position: relative;
+    width: inherit;
+    max-width: fit-content;
+    font-size: 12px;
+    z-index: 100;
+	  
+     }	
+	
+  }
