@@ -5,52 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineProz - Sobre</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css"> <!-- Importando o novo CSS -->
 </head>
 
 <body>
-    <header class="cabecalho">
-        <img src="assets-sobre/logo.jpeg" alt="Logotipo do CineProz" class="logo">
-        <nav class="menu-site">
-            <ul>
-                <li>
-                    <a href="/pagina-inicial-Emilio/home.html">Home</a>
-                </li>
-                <li>
-                    <a href="/pagina-filmes-Vinicius/filmes.html">Filmes</a>
-                </li>
-                <li>
-                    <a href="/pagina-sobre-Ariane/sobre.html">Sobre</a>
-                </li>
-                <li>
-                    <a href="/pagina-contato/contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="menu-opcoes">
-            <ul class="menu-lista">
-                <li class="menu-item dropdown">
-                    <a href="#">Categoria</a>
-                    <div class="dropdown-menu">
-                        <a href="#">Estreia</a>
-                        <a href="#">Clássicos</a>
-                        <a href="#">Pré-Estreia</a>
-                    </div>
-                </li>
-                <li class="menu-item dropdown">
-                    <a href="#">Gênero</a>
-                    <div class="dropdown-menu">
-                        <a href="#">Terror</a>
-                        <a href="#">Romance</a>
-                        <a href="#">Comédia</a>
-                        <a href="#">Drama</a>
-                        <a href="#">Ficção Científica</a>
-                        <a href="#">Infantil</a>
-                        <a href="#">Geral</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <div class="flex">
+                <a href="/pagina-inicial-Emilio/home.html"><img src="assets-sobre/logo.jpg" alt="Logotipo do CineProz" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="/pagina-inicial-Emilio/home.html">Home</a></li>
+                        <li><a href="/pagina-filmes-Vinicius/filmes.html">Filmes</a></li>
+                        <li><a href="/pagina-sobre-Ariane/sobre.html">Sobre</a></li>
+                        <li><a href="/pagina-contato/contato.html">Contato</a></li>
+                        <li class="dropdown">
+                            <a href="#">Categoria</a>
+                            <div class="dropdown-menu">
+                                <a href="#">Estreia</a>
+                                <a href="#">Clássicos</a>
+                                <a href="#">Pré-Estreia</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Gênero</a>
+                            <div class="dropdown-menu">
+                                <a href="#">Terror</a>
+                                <a href="#">Romance</a>
+                                <a href="#">Comédia</a>
+                                <a href="#">Drama</a>
+                                <a href="#">Ficção Científica</a>
+                                <a href="#">Infantil</a>
+                                <a href="#">Geral</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn-contato">
+                    <a href="/pagina-contato/contato.html"><button>Contato</button></a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -90,8 +85,27 @@
     </main>
 
     <footer class="rodape">
-        <p>© 2024 Todos os direitos reservados.</p>
+        <div class="cidademain">
+            <div class="maincidade">
+                <div class="cidade"></div>
+                <div class="cidade2"></div>
+            </div>
+            <div class="cidadeinfo">
+                <div class="cidadeinfo2">
+                    <p>© 2024 todos os direitos reservados à Filmes Proz.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="/pagina-contato/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{ 
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
 </body>
 
 </html>
