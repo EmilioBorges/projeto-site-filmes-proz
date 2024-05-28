@@ -38,13 +38,6 @@ header {
     
 }
 
-/* header:hover{
-    background-color: #0B090A;
-    max-width: 100%;
-    padding: 60px 4px;  
-    transition: .7s;
-} */
-
 header .container .flex a img{
     width: 74px;
     height: 74px;
@@ -102,7 +95,7 @@ header ul li a{
 }
 
 /* FALAR COM O INDIO */
-.flex .dropdown:hover .dropdown-menu:nth-child(2){
+.flex .dropdown:hover .dropdown-menu:last-child{
     display: block;
     margin-left: -82.5px;
     
@@ -138,8 +131,6 @@ header ul li a{
 .carrossel .list .item .img{
     width: 100%;
     height: 100%;
-    
-    
 }
 
 .item img {
@@ -148,8 +139,9 @@ header ul li a{
     background-size: cover;
     width: 1490px;
     height: 1000px;
-    filter: drop-shadow(10px 2px 1px rgba(0, 0, 0, .3));
+    filter: drop-shadow(10px 2px 1px rgba(0, 0, 0, .6));
 }
+
 
 .carrossel .list .item .content{
     position: absolute;
@@ -465,6 +457,7 @@ main  .texto-introdutorio{
     margin-top: 6px;
     padding: 5px;
     letter-spacing: 5px;
+    text-shadow: 0 0 1px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 8px #ff00de, 0 0 8px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 3px #ff00de;
 }
 
 /* FOOTER */
