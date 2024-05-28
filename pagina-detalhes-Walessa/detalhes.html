@@ -1,143 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="detalhes-filme" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+    name="detalhes-filme"
+    content="width=device-width, initial-scale=1.0"/>
     <title>Filme</title>
-    
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <header>
-         <div class="logo">
-            <img src="./img/Z07Ioy.logo-CineProz.png" alt="logo-CineProz">
-        </div>
-        
-        <nav class="menu-site">
-            <ul>
-                <li>
-                    <a href="/pagina-inicial-Emilio/home.html">Home</a>                    
-                </li>
-                <li>
-                    <a href="/pagina-filmes-Vinicius/filmes.html">Filmes</a>
-                </li>
-                <li>
-                    <a href="/pagina-sobre-Ariane/sobre.html">Sobre</a>
-                </li>
-                <li>
-                    <a href="/pagina-contato/contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="menu-opcoes">
-            <ul>
-                <li class="dropdown">
-                    <a href="#">Categoria</a>
-                    <div class="dropdown-menu">
-                        <a href="#">Estreia</a>
-                        <a href="#">Clássicos</a>
-                        <a href="#">Pré-Estreia</a>
-                    </div>     
-                        
-                    
-                </li>
-                <li class="dropdown">
-                    <a href="#">Gênero</a>
-                    <div class="dropdown-menu">
-                        <a href="#">Terror</a>
-                        <a href="#">Romance</a>
-                        <a href="#">Comédia</a>
-                        <a href="#">Drama</a>
-                        <a href="#">Ficção Científica</a>
-                        <a href="#">Infantil</a>
-                        <a href="#">Geral</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>         
-    </header>
-
+  <header id="header">
     <div class="container">
-        <main>
-            <h1>Bem vindos ao CineProz!</h1>
-            <h2>Detalhes do Filme</h2>
-            <div>
-                <img src="https://www.partes.com.br/wp-content/uploads/CINEMA-UMA-HISTORIA-AMERICANA1.jpg" alt="Cartaz do Filme">
-            </div>
-            <h2>Título: Uma História Americana</h2>
-            <p><strong>Ano de Lançamento:</strong> 1990</p>
-            <p><strong>Gênero:</strong> Drama</p>
-            <p><strong>Duração:</strong> 95 minutos</p>
-            <p><strong>Diretor:</strong> Richard Pearce </p>
-            <p><strong>Elenco:</strong>  Whoopi Goldberg, Sissy Spacek, Dwight Schultz </p>
-            <p><strong>Classificação</strong> 12 anos.</p>
-            <p><strong>Sinopse:</strong> O filme foi inspirado em fatos reais, baseado no movimento contra a segregação racial na década de 1950 nos Estados Unidos e no boicote aos ônibus liderado pelo pastor e ativista Martin Luther King, o filme Uma História Americana acompanha a história de Odessa (Whoopi Goldberg), uma empregada doméstica que trabalha há muitos anos para a família Thompson. Na ocasião os motoristas de ônibus eram encarregados de supervisionar para que passageiros negros ocupassem os bancos traseiros dos ônibus e somente aos brancos era permitido sentarem nos bancos da frente. Se estes já estivessem lotados, quando um branco subisse no ônibus, um dos negros tinha que ficar de pé para lhe dar lugar. Se recusando a passar pela humilhação de pegar o transporte público e como forma de protesto, Odessa decide ir a pé para o trabalho, mesmo que isso signifique que ela esteja exausta e chegue tarde todos os dias. Quando Miriam Thompson (Sissy Spacek) toma ciência do caso, as duas se juntam para reagir como resposta a todo movimento realizado na região de Montegomery, Alabama.</p>
-            <h2>Avaliações e Comentários</h2>
-            <div class="comments-section">
-                <!-- Exibindo Avaliações e Comentários -->
-                <div class="comment">
-                    <p><strong>Usuário 1:</strong> Ótimo filme! Recomendo a todos.</p>
-                </div>
-                <div class="comment">
-                    <p><strong>Usuário 2:</strong> Achei o filme mediano, poderia ser melhor.</p>
-                </div>
-                <!-- Formulário para Deixar Avaliações e Comentários -->
-                <h3>Deixe sua Avaliação ou Comentário</h3>
-                <form id="comment-form">
-                    <label for="username"><strong>Nome de Usuário:</strong></label><br>
-                    <input type="text" id="username" name="username" required><br>
-                    <label for="comment"><strong>Comentário:</strong></label><br>
-                    <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-            <div>
-                <!-- Descrição para Escolher Assistir ao Trailer ou ao Filme -->
-                <p><strong>Escolha assistir ao trailer ou ao filme, se disponível:</strong></p>
-                <!-- Botão para Assistir ao Trailer -->
-                <a href="#" class="button">Assistir ao Trailer</a>
-                <!-- Ou um botão para Assistir ao Filme -->
-                <a href="https://www.youtube.com/watch?v=cG1uLUQrX88&t=49s" class="button">Assistir ao Filme</a>
-            </div>
-        </main>
+        <div class="flex">
+            <a href="/projeto-site-filmes-proz/pagina-detalhes-Walessa/"><img src="/projeto-site-filmes-proz/pagina-detalhes-Walessa/img/logo-certa.jpg"
+            alt="logo do site">
+            </a>
 
-        <aside>
-            <h2>Recursos Adicionais</h2>            
-            <ul>
-                <li><a href="#">Trailer</a></li>
-                <li><a href="#">Críticas</a></li>
-                <li><a href="#">Comentários</a></li>
-                <li><a href="#">Detalhes do Filme</a></li>
-            </ul>
-            <h2> Um pouco mais do seu filme preferido!</h2>
-            <div>
-                <img src="https://www.partes.com.br/wp-content/uploads/CINEMA-UMA-HISTORIA-POSTER-MAIORZINHO.jpg" alt="Segundo Cartaz do Filme">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/pagina-inicial-Emilio/home.html">Home</a>                    
+                    </li>
+                    <li>
+                        <a href="/pagina-filmes-Vinicius/filmes.html">Filmes</a>
+                    </li>
+                    <li>
+                        <a href="/pagina-sobre-Ariane/sobre.html">Sobre</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#">Categoria</a>
+                        <div class="dropdown-menu">
+                            <a href="#">Estreia</a>
+                            <a href="#">Clássicos</a>
+                            <a href="#">Pré-Estreia</a>
+                        </div>   
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Gênero</a>
+                        <div class="dropdown-menu">
+                            <a href="#">Terror</a>
+                            <a href="#">Romance</a>
+                            <a href="#">Comédia</a>
+                            <a href="#">Drama</a>
+                            <a href="#">Ficção Científica</a>
+                            <a href="#">Infantil</a>
+                            <a href="#">Geral</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="/pagina-contato/contato.html"><button>Contato</button></a>
             </div>
-            <div>
-                <img src="https://www.partes.com.br/wp-content/uploads/CINEMA-UMA-HISTORIA-.jpg" alt="Foto do Filme">
-            </div>
-        </aside>
+        </div>
+       
+    </div>      
+    
+</header>
+   
+
+<div class="slide-container">
+  <div class="slides"></div>
+</div>
+
+  <div class="containe">
+    <div class="color c1"></div>
+    <div class="color c2"></div>
+    <div class="color c3"></div>
+    <div class="color c4"></div>
+    <div class="slides"></div>
+  </div>
+
+    <div class="background">
+
     </div>
 
-     <footer class="rodape">
-        <div class="cidademain">
-            <div class="maincidade">
-            <div class="cidade"></div>
-            <div class="cidade2"></div>
-            </div>
-                          
-            <div class="cidadeinfo">
-            <div class="cidadeinfo2">
+    <section class="corpo">
+      
+    <div class="container">
+      <main>
+        <h1>CineProz</h1>
+        <h2>Aqui você sabe mais sobre seu filme!</h2>
+        <h2>Detalhes do Filme</h2>
+        <div>
+
+        <div class="conteudo">
+          <div class="imagem">
+            <img
+            src="https://www.partes.com.br/wp-content/uploads/CINEMA-UMA-HISTORIA-AMERICANA1.jpg"
+            alt="Cartaz do Filme"/>
+          </div>
+
+          <div class="texto">
+            <h2>Título: Uma História Americana</h2>
+        <p><strong>Ano de Lançamento:</strong> 1990</p>
+        <p><strong>Gênero:</strong> Drama</p>
+        <p><strong>Duração:</strong> 95 minutos</p>
+        <p><strong>Diretor:</strong> Richard Pearce</p>
+        <p>
+          <strong>Elenco:</strong> Whoopi Goldberg, Sissy Spacek, Dwight Schultz
+        </p>
+        <p><strong>Classificação</strong> 12 anos.</p>
+        <p>
+          <strong>Sinopse:</strong> O filme foi inspirado em fatos reais,
+          baseado no movimento contra a segregação racial na década de 1950 nos
+          Estados Unidos e no boicote aos ônibus liderado pelo pastor e ativista
+          Martin Luther King, o filme Uma História Americana acompanha a
+          história de Odessa (Whoopi Goldberg), uma empregada doméstica que
+          trabalha há muitos anos para a família Thompson. Na ocasião os
+          motoristas de ônibus eram encarregados de supervisionar para que
+          passageiros negros ocupassem os bancos traseiros dos ônibus e somente
+          aos brancos era permitido sentarem nos bancos da frente. Se estes já
+          estivessem lotados, quando um branco subisse no ônibus, um dos negros
+          tinha que ficar de pé para lhe dar lugar. Se recusando a passar pela
+          humilhação de pegar o transporte público e como forma de protesto,
+          Odessa decide ir a pé para o trabalho, mesmo que isso signifique que
+          ela esteja exausta e chegue tarde todos os dias. Quando Miriam
+          Thompson (Sissy Spacek) toma ciência do caso, as duas se juntam para
+          reagir como resposta a todo movimento realizado na região de
+          Montegomery, Alabama.</p>
+        </div>
+        
+        <div>
+          <!-- Descrição para Escolher Assistir ao Trailer ou ao Filme -->
+          <p><strong>Escolha assistir ao trailer ou ao filme, se disponível:</strong></p>
+          <!-- Botão para Assistir ao Trailer -->
+          <a href="#" class="button trailer-btn">Assistir ao Trailer</a>
+          <!-- Ou um botão para Assistir ao Filme -->
+          <a href="https://www.youtube.com/watch?v=cG1uLUQrX88&t=49s" class="button filme-btn">Assistir ao Filme</a>
+        </div>
+          </div>
+    </section>
+
+        </div>
+       
+      </main>
+
+      <div class="container">
+        <aside align="rigth">
+          <div>
+            <h2>Recursos Adicionais</h2>
+          <ul>
+            <li><a href="#">Trailer</a></li>
+            <li><a href="#">Críticas</a></li>
+            <li><a href="#">Comentários</a></li>
+            <li><a href="#">Detalhes do Filme</a></li>
+          </ul>
+          <h2>Um pouco mais do seu filme preferido!</h2>
+          <div>
+            <img
+            src="https://br.web.img2.acsta.net/r_1280_720/pictures/23/12/22/17/58/5218496.jpg"
+            alt="Foto do Filme"
+          />
+        </div>
+            <img
+              src="https://www.partes.com.br/wp-content/uploads/CINEMA-UMA-HISTORIA-POSTER-MAIORZINHO.jpg"
+              alt="Segundo Cartaz do Filme"
+            />
+          </div>
+          <div>
+            <img
+              src="https://www.partes.com.br/wp-content/uploads/CINEMA-UMA-HISTORIA-.jpg"
+              alt="Foto do Filme"
+            />
+          </div>
+          </div>
+        </aside>
+      </div>
+      
+    </div>
+
+    <footer class="rodape">
+      <div class="cidademain">
+        <div class="maincidade">
+          <div class="cidade"></div>
+          <div class="cidade2"></div>
+        </div>
+
+        <div class="cidadeinfo">
+          <div class="cidadeinfo2">
             <p>© 2024 todos os direitos reservados.</p>
-            
-            </div>
-                          
-            <div class="cidadeinfo2 cidadeinforight">
+          </div>
+
+          <div class="cidadeinfo2 cidadeinforight">
             <p>Rede Social <a href="#" target="_blank">linkedin</a></p>
-            </div>
-            </div>
-              
-            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

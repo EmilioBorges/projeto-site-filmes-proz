@@ -1,0 +1,383 @@
+/* MENU */
+html {
+  height: 200vh;
+}
+
+body {
+  background-color: #0b090a;
+  background-image: linear-gradient(#0b090a, #660708);
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 1500px;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  transition: 0.7s;
+  margin-top: 15px;
+}
+
+header .container .flex a img {
+  width: 74px;
+  height: 74px;
+  align-items: center;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 35px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+header ul li:hover {
+  border-radius: 0px;
+  border: 2px solid #660708;
+  transition: 0.2s;
+}
+
+header ul li a {
+  color: #ffffff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  background-color: #0b090a;
+  padding: 5px;
+  border: 2px solid #660708;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: white;
+  padding: 16px;
+  border: 1px solid #660708;
+}
+
+.dropdown-menu a:hover {
+  border: 1px solid #ffffff;
+  background-color: #660708;
+}
+
+.flex .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 12px;
+}
+
+.flex .dropdown:hover .dropdown-menu:nth-child(2) {
+  display: block;
+  margin-left: -82.5px;
+}
+
+.btn-contato button {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  background-color: #660708;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ajuste de body e html */
+body,
+html {
+  overflow: auto;
+}
+
+/* Definindo o contêiner para os slides */
+.slide-container {
+  position: relative;
+  width: 80%;
+  height: 60vh; /* Ajuste conforme necessário */
+  margin: 20px auto;
+  overflow: hidden;
+  border: 2px solid #660708; /* Adicionando borda para melhor visualização */
+}
+
+.slides {
+  position: inherit;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all 3s;
+  animation: slides1 20s ease-in-out alternate infinite;
+}
+
+@keyframes slides1 {
+  0% {
+    background-position: left;
+    animation-delay: 5s;
+    zoom: 105%;
+    background-image: url(https://br.web.img2.acsta.net/r_1280_720/pictures/23/12/22/17/58/5218496.jpg);
+  }
+  30% {
+    background-image: url(https://i.im.ge/2024/05/26/KaELgr.MV8uanBn.jpeg);
+    background-position: right;
+    animation-delay: 5s;
+    opacity: 0.8;
+    zoom: 105%;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    background-image: url(https://i.pinimg.com/736x/b7/f8/21/b7f8218b0415d95727c8ef8371921d96.jpg);
+    opacity: 1;
+    background-position: left;
+    zoom: 105%;
+  }
+  70% {
+    opacity: 0.8;
+    transition-delay: 3s;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    background-image: url(https://i.im.ge/2024/05/26/KaEP0J.Y181LmpwZw.jpeg);
+    transition-delay: 5s;
+  }
+}
+
+.body {
+  background-size: cover; /* para cobrir todo o corpo */
+  background-repeat: no-repeat; /* para não repetir a imagem */
+  opacity: 0.35;
+}
+
+.container {
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse; /* Inverte a ordem dos elementos */
+}
+
+.corpo {
+  width: 960px;
+  margin: auto;
+}
+
+.conteudo {
+  display: table;
+}
+
+.imagem {
+  display: table-cell;
+  float: left;
+  margin: auto;
+  position: relative; /* Adicionado */
+}
+
+.texto {
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+h1 {
+  color: #796;
+}
+
+main {
+  flex: 1;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5cb3cc; /* Cor azul claro */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a9abf; /* Cor azul claro mais escura no hover */
+}
+
+.trailer-btn {
+  margin-right: 10px; /* Margem direita entre os botões */
+}
+
+.aside {
+  flex-direction: column;
+  margin-right: 100px; /* Ajuste conforme necessário */
+}
+
+.aside img {
+  position: absolute; /* Posicionamento absoluto para sobrepor as imagens */
+}
+
+/* Define as coordenadas e o z-index para cada imagem */
+.aside img:nth-child(1) {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.aside img:nth-child(2) {
+  top: 20px; /* Sobrepor a primeira imagem */
+  left: 20px; /* Sobrepor a primeira imagem */
+  z-index: 2;
+}
+
+.aside img:nth-child(3) {
+  top: 40px; /* Sobrepor a primeira imagem */
+  left: 40px; /* Sobrepor a primeira imagem */
+  z-index: 1;
+}
+
+.aside {
+  flex: 0 0 300px;
+  margin-left: 20px;
+  background-color: transparent; /* Define o background como transparente */
+  position: relative;
+}
+
+/* Adiciona um pseudo-elemento para criar o fundo degradê vermelho */
+.aside::before {
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    #660708
+  ); /* Cria um degradê vermelho transparente para escuro */
+  z-index: -1; /* Garante que o fundo degradê esteja atrás do conteúdo do aside */
+}
+
+/* FOOTER */
+
+.rodape .cidademain {
+  position: absolute;
+  background: url(https://rawartsites.neocities.org/img/Footer/footer-bg.webp)
+    no-repeat scroll center 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.rodape .cidade {
+  background: url(https://rawartsites.neocities.org/img/Footer/volks.gif)
+    no-repeat;
+  width: 252px;
+  height: 113px;
+  left: 0%;
+  bottom: 0;
+  background-size: 250px;
+  position: absolute;
+  animation: cidade 10s linear infinite;
+  z-index: 100;
+}
+
+@keyframes cidade {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.rodape .cidade2 {
+  background: url(https://rawartsites.neocities.org/img/Footer/cyclist.gif)
+    no-repeat;
+  width: 190px;
+  height: 109px;
+  left: 0%;
+  bottom: 0;
+  background-size: 78px;
+  animation: cidade2 15s linear infinite;
+  position: absolute;
+}
+
+@keyframes cidade2 {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.cidadeinfo {
+  color: #ffffff;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 268px 0 0 0;
+  display: flex;
+}
+
+.cidadeinforight {
+  position: absolute;
+  text-align: right;
+  width: inherit;
+}
+
+.cidadeinforight p,
+.cidadeinforight a {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .cidadeinforight {
+    position: relative;
+    text-align: right;
+    width: auto;
+    padding: 0 8px;
+  }
+
+  .cidadeinfo {
+    position: relative;
+    width: inherit;
+    max-width: fit-content;
+    font-size: 12px;
+    z-index: 100;
+  }
+}
