@@ -111,7 +111,7 @@ main {
 
 .login-box {
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
+    padding: 70px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 300px;
@@ -120,7 +120,8 @@ main {
 
 .login-box h1 {
     margin-bottom: 20px;
-    color: #660708;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .textbox {
@@ -151,6 +152,7 @@ main {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -163,7 +165,8 @@ main {
 }
 
 .login-box a {
-    color: #660708;
+    color: #FFFFFF;
+    font-weight: bold;
     text-decoration: none;
 }
 
