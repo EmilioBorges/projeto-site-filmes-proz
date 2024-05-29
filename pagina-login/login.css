@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    background-color: #0B090A;
+    background-image: linear-gradient(#0B090A, #660708);
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #0B090A;
+}
+
+.logo {
+    width: 74px;
+    height: 74px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li:hover a {
+    color: #660708;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #0B090A;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    padding: 10px 0;
+    border: 1px solid #660708;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul li .dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+    transition: background-color 0.3s;
+}
+
+nav ul li .dropdown-menu a:hover {
+    background-color: #660708;
+}
+
+.btn-contato button {
+    padding: 10px 20px;
+    background-color: #660708;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-contato button:hover {
+    background-color: #FFFFFF;
+    color: #660708;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+    color: #660708;
+}
+
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+}
+
+.btn {
+    background-color: #660708;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #660708;
+}
+
+.login-box p {
+    margin-top: 20px;
+}
+
+.login-box a {
+    color: #660708;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
