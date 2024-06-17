@@ -6,6 +6,7 @@
   <meta name="detalhes-filme" content="width=device-width, initial-scale=1.0">
   <title>Filme</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -48,11 +49,31 @@
       </div>
   </header>
 
-<div class="slide-container">
-  <div class="slides"></div>
-</div>
+  <div class="slide-container">
+    <div class="slides">
+      <div>
+        <section class="corpo">
+          <div class="auto-container">
+            <!-- Botões para controlar o áudio dentro da div audio-container -->
+            <div class="audio-container">
+              <button id="playButton">Play</button>
+              <button id="pauseButton">Pause</button>
+              <button id="stopButton">Stop</button>
+              <!-- Nome do som em vermelho -->
+              <span id="soundName">Som</span>
+              <!-- Tag de áudio incorporada -->
+              <audio id="som" autoplay>
+                <source src="assets/a-long-way-166385.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  
 
-  <div class="containe">
+ <div class="containe">
     <div class="color c1"></div>
     <div class="color c2"></div>
     <div class="color c3"></div>

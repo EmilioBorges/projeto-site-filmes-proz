@@ -1,4 +1,5 @@
 /* MENU */
+
 html {
   height: 200vh;
 }
@@ -83,9 +84,10 @@ header ul li a {
 .flex .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 12px;
+  /* margin-left: -46px; */
 }
 
-.flex .dropdown:hover .dropdown-menu:nth-child(2) {
+.flex .dropdown:hover .dropdown-menu:last-child {
   display: block;
   margin-left: -82.5px;
 }
@@ -101,16 +103,18 @@ header ul li a {
   border-radius: 4px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Ajuste de body e html */
 body,
 html {
   overflow: auto;
+}
+
+h1 {
+  font-size: 60px;
+  color: #0c093e;
+  background-color: #660708;
+  border-radius: 70px;
+  text-align: center;
 }
 
 /* Definindo o contêiner para os slides */
@@ -121,6 +125,7 @@ html {
   margin: 20px auto;
   overflow: hidden;
   border: 2px solid #660708; /* Adicionando borda para melhor visualização */
+  position: relative; /* Adicionado */
 }
 
 .slides {
@@ -133,6 +138,41 @@ html {
   background-size: cover;
   transition: all 3s;
   animation: slides1 20s ease-in-out alternate infinite;
+}
+
+/* Novo estilo para a div audio-container */
+.audio-container {
+  position: absolute;
+  bottom: 20px; /* Distância da margem inferior */
+  right: 20px; /* Distância da margem direita */
+  color: #660708; /* Cor do texto "som" */
+}
+
+/* Estilo para os botões de controle de áudio */
+.audio-container button {
+  background-color: #660708; /* Cor azul claro para os botões */
+  color: #fff;
+  padding: 5px 20px;
+}
+
+/* Estilo para o botão de som */
+#soundName {
+  color: #fff;
+  font-size: 20px;
+  background-color: blue;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#soundButton {
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+#soundButton.playing {
+  background-color: blue;
 }
 
 @keyframes slides1 {
@@ -156,7 +196,7 @@ html {
     opacity: 0;
   }
   60% {
-    background-image: url(https://i.pinimg.com/736x/b7/f8/21/b7f8218b0415d95727c8ef8371921d96.jpg);
+    background-image: url(https://i.im.ge/2024/06/14/K8eSDm.beach-sand-peaceful-ocean-23-2148927626.jpeg);
     opacity: 1;
     background-position: left;
     zoom: 105%;
@@ -211,10 +251,6 @@ html {
   width: 300px;
   margin-top: -20px;
   margin-left: 20px;
-}
-
-h1 {
-  color: #796;
 }
 
 main {
