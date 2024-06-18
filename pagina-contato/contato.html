@@ -68,8 +68,9 @@
         <form action="">
             <fieldset class="grupo">
                 <div class="campo">
-                    <label for="nome">Nome</label>
+                    <label for="nome">Nome <strong>*</strong></label>
                     <input type="text" name="nome" id="nome" required>
+                    <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
     
                 <div class="campo">
@@ -78,9 +79,10 @@
                 </div>
             </fieldset>
     
-            <div class="campo">
-                <label for="email">E-mail</label>
+            <div class="campo" id="campoEmail">
+                <label for="email">E-mail <strong>*</strong></label>
                 <input type="email" name="email" id="email" required>
+                <p id="email-helper" class="helper-text ">Mensagem de ajuda</p>
             </div>
     
             <div class="campo">
