@@ -549,7 +549,7 @@ usernameInput.addEventListener("change", (e) => {
       inputsCorretos.username = true
 // Valida menor que 3 caracteres caso falso
   }else {
-      usernameHelper.innerText = `Use no mínimo 3 letras e sem números no campo Nome!`
+      usernameHelper.innerText = `Use apenas letras no campo Nome!`
       estilizarInputIncorreto(usernameInput,usernameHelper)
       inputsCorretos.username = false
   }
@@ -581,23 +581,3 @@ emailInput.addEventListener("change", (e) => {
 })
 
 
-//EVITAR ENVIO DO FORMULARIO
-
-let btnSubmit = document.querySelector('button[type="submit"]')
-let inputsCorretos = {
-  inputsCorretos
-}
-
-
-btnSubmit.addEventListener("click", (e) => {
-    if(inputsCorretos.username == false 
-        || inputsCorretos.email == false 
-        || inputsCorretos.senha == false
-        || inputsCorretos.confirmaSenha == false
-    ){
-        e.preventDefault()
-        alert("Os campos obrigatorios devem ser preenchidos corretamente")
-    }else {
-        alert("Formulario enviado com sucesso")
-    }
-})
