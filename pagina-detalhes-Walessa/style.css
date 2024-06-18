@@ -1,17 +1,26 @@
-/* MENU */
-
-html {
-  height: 200vh;
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
 }
 
+html,
 body {
+  height: 200vh;
   background-color: #0b090a;
   background-image: linear-gradient(#0b090a, #660708);
+  color: #ffffff;
 }
 
 .container {
   max-width: 1500px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .flex {
@@ -32,81 +41,70 @@ header {
   margin-top: 15px;
 }
 
-header .container .flex a img {
+.logo {
   width: 74px;
   height: 74px;
-  align-items: center;
 }
 
-header ul {
+nav ul {
   list-style-type: none;
 }
 
-header ul li {
+nav ul li {
   display: inline-block;
-  margin: 0 35px;
-  width: 80px;
-  height: 30px;
-  text-align: center;
-  padding-top: 12px;
+  margin: 0 15px;
+  position: relative;
 }
 
-header ul li:hover {
-  border-radius: 0px;
-  border: 2px solid #660708;
-  transition: 0.2s;
-}
-
-header ul li a {
+nav ul li a {
   color: #ffffff;
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 
-.dropdown-menu {
-  position: absolute;
+nav ul li:hover a {
+  color: #660708;
+}
+
+nav ul li .dropdown-menu {
   display: none;
+  position: absolute;
   background-color: #0b090a;
-  padding: 5px;
-  border: 2px solid #660708;
-}
-
-.dropdown-menu a {
-  display: block;
-  color: white;
-  padding: 16px;
+  top: 30px;
+  left: 0;
+  width: 200px;
+  padding: 10px 0;
   border: 1px solid #660708;
 }
 
-.dropdown-menu a:hover {
-  border: 1px solid #ffffff;
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+nav ul li .dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+nav ul li .dropdown-menu a:hover {
   background-color: #660708;
-}
-
-.flex .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 12px;
-  /* margin-left: -46px; */
-}
-
-.flex .dropdown:hover .dropdown-menu:last-child {
-  display: block;
-  margin-left: -82.5px;
 }
 
 .btn-contato button {
-  width: 120px;
-  height: 40px;
-  border: 0;
+  padding: 10px 20px;
   background-color: #660708;
   color: #ffffff;
-  cursor: pointer;
-  transition: 0.2s;
+  border: none;
   border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Ajuste de body e html */
-body,
-html {
-  overflow: auto;
+.btn-contato button:hover {
+  background-color: #ffffff;
+  color: #660708;
 }
 
 h1 {
@@ -115,6 +113,10 @@ h1 {
   background-color: #660708;
   border-radius: 70px;
   text-align: center;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 /* Definindo o contêiner para os slides */
@@ -280,26 +282,30 @@ main {
   margin-right: 100px; /* Ajuste conforme necessário */
 }
 
-.aside img {
-  position: absolute; /* Posicionamento absoluto para sobrepor as imagens */
+.aside .imagem-grid {
+  display: flex;
+  gap: 20px;
 }
 
 /* Define as coordenadas e o z-index para cada imagem */
-.aside img:nth-child(1) {
+.aside img:nth-child(2) {
   top: 0;
   left: 0;
+  transition-delay: 400ms;
   z-index: 3;
 }
 
-.aside img:nth-child(2) {
+.aside img:nth-child(3) {
   top: 20px; /* Sobrepor a primeira imagem */
   left: 20px; /* Sobrepor a primeira imagem */
+  transition-delay: 700ms;
   z-index: 2;
 }
 
-.aside img:nth-child(3) {
+.aside img:nth-child(4) {
   top: 40px; /* Sobrepor a primeira imagem */
   left: 40px; /* Sobrepor a primeira imagem */
+  transition-delay: 1000ms;
   z-index: 1;
 }
 
@@ -324,6 +330,27 @@ main {
     #660708
   ); /* Cria um degradê vermelho transparente para escuro */
   z-index: -1; /* Garante que o fundo degradê esteja atrás do conteúdo do aside */
+}
+
+aside section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 30vh;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
 }
 
 /* FOOTER */
