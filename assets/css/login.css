@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url(/assets/css/global.css);
 
 * {
     padding: 0;
@@ -12,94 +13,7 @@
 }
 
 html, body {
-    height: 100%;
-    background-color: #0B090A;
-    background-image: linear-gradient(#0B090A, #660708);
     color: #FFFFFF;
-}
-
-.container {
-    max-width: 1500px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header {
-    width: 100%;
-    padding: 20px 0;
-    background-color: #0B090A;
-}
-
-.logo {
-    width: 74px;
-    height: 74px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-    position: relative;
-}
-
-nav ul li a {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-nav ul li:hover a {
-    color: #660708;
-}
-
-nav ul li .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #0B090A;
-    top: 30px;
-    left: 0;
-    width: 200px;
-    padding: 10px 0;
-    border: 1px solid #660708;
-}
-
-nav ul li:hover .dropdown-menu {
-    display: block;
-}
-
-nav ul li .dropdown-menu a {
-    display: block;
-    padding: 10px;
-    color: #FFFFFF;
-    transition: background-color 0.3s;
-}
-
-nav ul li .dropdown-menu a:hover {
-    background-color: #660708;
-}
-
-.btn-contato button {
-    padding: 10px 20px;
-    background-color: #660708;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-contato button:hover {
-    background-color: #FFFFFF;
-    color: #660708;
 }
 
 main {
