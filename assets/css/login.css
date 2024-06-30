@@ -87,3 +87,7 @@ main {
 .login-box a:hover {
     text-decoration: underline;
 }
+
+footer {
+    margin-top: 200px;
+}
