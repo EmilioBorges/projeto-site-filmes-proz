@@ -347,6 +347,6 @@ main  .texto-introdutorio{
     margin-top: 6px;
     padding: 5px;
     letter-spacing: 5px;
-    text-shadow: 0 0 1px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 8px #ff00de, 0 0 8px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 3px #ff00de;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #5a565a, 0 0 2px #5a565a, 0 0 4px #5a565a, 0 0 4px #5a565a, 0 0 1px #5a565a;
 }
 
