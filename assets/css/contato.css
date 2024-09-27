@@ -42,6 +42,10 @@
     clear: both;
 }
 
+h1 {
+  font-size: 25px;
+}
+
   .campo {
     margin-bottom: 1em;
     margin-left: 2em;
@@ -70,7 +74,7 @@
   }
 
   .campo input:focus, .campo select:focus, .campo textarea:focus {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   #texto {
@@ -95,7 +99,7 @@
   }
 
   .botao:hover {
-    background: #fff;
+    background: #0e4159;
   }
 
   /* Contato */
@@ -111,92 +115,42 @@
   /* CARD */
 
   section {
-    
+    .container-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      max-width: 1200px;
+      flex-wrap: wrap;
+      z-index: 1;
+      min-height: 10vh;
+    }
+  
+    .container-card .card {
+      position: relative;
+      width: 220px;
+      height: 350px;
+      margin: 30px;
+      box-shadow: 20px 20px 50px rgba(0,0,0, 0.5);
+      background-color: #A4161A;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1.5px solid rgba(255,255, 255, 0.5);
+      border-left: 1px solid rgba(255,255, 255, 0.5);
+      backdrop-filter: blur(5px);
+      background: url(/assets/img/foto-card-contato.jpg);
+  
+    }
+ 
+     .container-card .card .content a:hover{
+      background-color: #0B090A;
+      color: #FFFFFF;
+    }
+  
   }
-
-  .container-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    z-index: 1;
-    min-height: 10vh;
-  }
-
-  .container-card .card {
-    position: relative;
-    width: 220px;
-    height: 350px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0,0,0, 0.5);
-    background-color: #A4161A;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1.5px solid rgba(255,255, 255, 0.5);
-    border-left: 1px solid rgba(255,255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    background: url(/assets/img/foto-card-contato.jpg);
-
-  }
-/* efeito que faz o texto sumir */
-  .container-card .card .content {
-    padding: 20px;
-    text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 0.5s;
-  }
-
-  .container-card .card:hover .content {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-
-  .container-card .card .content h2 {
-    position: absolute;
-    top: -50px;
-    right: 30px;
-    font-size: 5em;
-    color: rgba(0,0,0, 0.06);
-    pointer-events: none;
-  }
-
-  .container-card .card .content h3{
-    font-size: 1.8em;
-    color: #FFFFFF;
-    z-index: 1;
-  }
-
-  .container-card .card .content p{
-    font-size: 1em;
-    color: #0B090A;
-    font-weight: 500;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #FFFFFF;
-  }
-
-  .container-card .card .content a{
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    margin-top: 15px;
-    background-color: #660708;
-    color: #FFFFFF;border-radius: 8px;
-    font-weight: 500;
-    box-shadow: rgba(249, 248, 248, 0.8);
-  }
-
-  .container-card .card .content a:hover{
-    background-color: #0B090A;
-    color: #FFFFFF;
-  }
-
-
 
   /* ---------- Estilos dinâmicos ---------- */
    .helper-text {
@@ -228,4 +182,11 @@ input.correct {
 
 .visible {
   display: block;
+}
+
+footer {
+  color: #faf8f8;
+  margin: 7%;
+  margin-top: 19%;
+  margin-bottom: 40px;
 }

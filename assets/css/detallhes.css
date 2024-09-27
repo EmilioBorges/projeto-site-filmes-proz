@@ -261,3 +261,10 @@ aside section {
   transform: translateX(0);
   transition: all 2s;
 }
+
+footer {
+  color: #faf8f8;
+  margin: 7%;
+  margin-top: 19%;
+  margin-bottom: 40px;
+}
